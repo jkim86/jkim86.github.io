@@ -1,0 +1,54 @@
+body{position:center;
+	margin-left:80px;
+	margin-right:700px;
+	 font-family: 'Heebo', sans-serif;
+	 font-size:16px;
+	 line-height: 170%}
+
+.bar {top:0px;
+	overflow:hidden;
+	background-color:white;
+	position:fixed;
+	width:100%;	
+	border-bottom: 1px solid black;
+	padding-bottom:5px;
+}
+
+h1 {font-weight:800;
+	font-size:70px;
+	line-height:70px;
+	margin:0px 0px 0px 0px;
+	color:black;}
+
+h2{font-weight:300;
+color:grey;
+margin:40px 0px 10px 0px;}
+
+
+h3{font-weight:400;
+padding-bottom:40px;
+font-family: 'Source Serif Pro', serif;
+font-size:20px;
+line-height:120%;}
+
+span.artist{display:inline;
+			font-weight:700;
+			padding-right:10px;
+}
+
+.box{
+	float:right;
+	width:200px;
+	height:150px;
+	opacity:0;
+}
+.hover-reveal{
+	float:right;
+	width:250px;
+	height:150px;
+	opacity:1;
+}
+.interview {
+	margin-top:200px;
+	margin-bottom:80px;
+}
