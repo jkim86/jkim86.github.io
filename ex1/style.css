@@ -26,11 +26,12 @@ li{ font-weight:400;
 
 }
 
-#mainpoint{
+.mainpoint{
+	width:47%;
+	height:700px;
+	align-content:center;
 	display:inline-block;
-	width:50%;
-	height:auto;
-	overflow:scroll;
+	float:left;
 }
 
 
