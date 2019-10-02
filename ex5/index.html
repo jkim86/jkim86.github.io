@@ -8,39 +8,138 @@
         <meta name="viewport" content="width=device-width">
       <link rel="stylesheet" href ="style.css">
       	<style>
-      		.container{border:1px solid red;
+   			.body{background:black;}
+
+      		.container{
       					width:20%;
       					height:200px;
       					margin:30px;
       					display:inline-block;
-      				}
-      		.stroke-1{background:blue;
-      				width:90%;
-      				height:20%;
-      				border-bottom-left-radius:10%;
-      			}
-      		.stroke-2{background:blue;
-      				width:40px;
-      				height:40%;
-      				transform: rotate(-30deg) translate(10px,-39px);
-      				float: right;
-      				border-radius:10%;
+      		}
 
-      			}
-      		.stroke-3{background:blue;
-      				width:40px;
-      				height:80%;
-      				transform:rotate(35deg);
-      				transform:translate(45px,45px);
-      				float: right;
-      				border-radius:10%;}
-      		.stroke-4{background:blue;
-      				width:100%;
-      				height:80%;
-      				transform:translate(0px,70px);
-      				border-radius:10%;
-      				position:relative;
-      				bottom:0;}
+      		.stroke-1{background:#FFA770;
+      				position:absolute;
+      				width:300px;
+      				height:300px;
+      				border-radius:50%
+      		}
+
+      		.innerstroke-1{background:#FFFFFF;
+      				position:absolute;
+      				width: 200px;
+      				height:200px;
+      				border-radius:50%;
+      				transform: translate(50px,50px);
+      				z-index:10;
+      		}
+
+      		.a-stroke{
+      			background:#FFA770;
+      			position:absolute;
+      			width: 50px;
+      			height:100px;
+      			transform:translate(270px);
+      		}
+
+      		.a-bottom-stroke{
+      			background:#FFA770;
+      			position:absolute;
+      			width: 50px;
+      			height:100px;
+      			transform:translate(270px,200px);
+      		}
+
+      		.halfCircleTop{
+     height:300px;
+     width:250px;
+     border-radius: 200px 160px 50px 35px;
+     background:rgb(120,159,135);
+ }
+
+     		.innercircle{
+     			height:150px;
+     			width:150px;
+     border-radius: 29% 71% 29% 71% / 30% 30% 70% 70%;
+     background: #FFFFFF;
+     z-index:10;
+     transform:translate(50px,-250px);
+}
+
+     		.bottomstroke{
+     			height:100px;
+     			width:140px;
+     border-radius: 29% 71% 29% 71% / 30% 30% 70% 70%;
+     background: #FFFFFF;
+     z-index:10;
+     transform:translate(50px,-220px);
+}
+
+			.rightstroke{
+				height:200px;
+				width:40px;
+				background: #00000;
+				position:absolute;
+				background:#FF6B13;
+				transform:skew(20deg) translate(120px);
+			}
+
+			.leftstroke{
+				height:200px;
+				width:40px;
+				position:absolute;
+				background: #00000;
+				transform:skew(-20deg);
+				background: #FF6B13;
+			}
+
+			.middlestroke{
+				height:30px;
+				width:100px;
+				position:absolute;
+				background: #00000;
+				transform:translate(25px,80px);
+				background:#FF6B13;
+			}
+
+			.topcenter{
+				height:40px;
+				width:100px;
+				position:absolute;
+				background:#000000;
+				transform:skew(-10deg) translate(80px);
+			}
+
+			.bottomcenter{
+				height:40px;
+				width:100px;
+				position:absolute;
+				background:#000000;
+				transform:skew(-10deg) translate(80px,200px);
+			}
+
+			.leftcenter{
+				height:200px;
+				width:40px;
+				position:absolute;
+				background:#000000;
+				transform:skew(-10deg) translate(40px,20px);
+			}
+
+			.rightcenter{
+				height:200px;
+				width:40px;
+				position:absolute;
+				background:#000000;
+				transform:skew(-10deg) translate(150px,20px);
+			}
+
+			.bottomstroke_1{
+				height:40px;
+				width:50px;
+				position:absolute;
+				background:#000000;
+				transform:skew(-10deg) translate(200px,200px);
+			}
       	</style>
     </head>
 <body>
@@ -48,25 +147,48 @@
 	<div class="container">
 			<div class="stroke-1">
 			</div>
-			<div class="stroke-2">	
+			<div class="innerstroke-1">
 			</div>
-			<div class="stroke-3">	
+			<div class="a-stroke">
 			</div>
-			<div class="stroke-4">	
-			</div>
-	</div>
-		<div class="container">
-			<div 
-			<div class="stroke-4">
+			<div class="a-bottom-stroke">
 			</div>
 	</div>
-		<div class="container">
+
+
+	<div class="container">
+			<div class="halfCircleTop">
+			</div>
+			<div class="innercircle">
+			</div>
+			<div class="bottomstroke">
+			</div>
 	</div>
-		<div class="container">
+
+
+	<div class="container">
+			<div class="topcenter">
+			</div>
+			<div class="bottomcenter">
+			</div>
+			<div class="leftcenter">
+			</div>
+			<div class="rightcenter">
+			</div>
+			<div class="bottomstroke_1">
+			</div>
 	</div>
-		<div class="container">
+
+
+	<div class="container">
+			<div class="leftstroke">
+			</div>
+			<div class="rightstroke">
+			</div>
+			<div class="middlestroke">
+			</div>
+
 	</div>
-		<div class="container">
-	</div>
+
 
 </body>
