@@ -1,0 +1,7 @@
+body{margin:100px 100px;
+}
+li{
+line-height: 150%;
+color:red;}
+
+li:hover{color:green;}
