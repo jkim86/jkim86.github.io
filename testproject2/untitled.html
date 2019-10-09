@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>-를기억하며</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+      <link rel="stylesheet" href ="style.css">
+      <link href="https://fonts.googleapis.com/css?family=Gothic+A1&display=swap" rel="stylesheet">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+
+<body>
+	<h1 id="title">gjh </h1> 
+	<h1> 를기억하며</h1>
+	<ul>
+		<li class="date A">A</li>
+		<li class="date B" data-title="안녕">06.10.1919
+		</li>
+		<li class="date B">08.13.1945</li>
+		<li class="date A" >A</li>
+		<li class="date B" >A</li>
+		<li class="date A" >10.39.1929</li>
+
+	</ul>
+<script type="text/javascript">
+
+	$("date").hover(function(){
+		$("title").text($(this).attr("data-title"));
+	})
+
+
+	$(".A").hover(function(){
+  $(".A").css("color", "yellow");
+  }, function(){
+  $(".A").css("color", "black");
+});
+
+		$(".B").hover(function(){
+  $(".B").css("color", "red");
+  }, function(){
+  $(".B").css("color", "black");
+});
+
+	$("#regTitle").html("Hello World");
+
+</script>>
+
+
+</body>
+</html>

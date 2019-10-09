@@ -1,0 +1,9 @@
+.body{
+   color:black;
+   margin:100px;
+   font-size:50px;
+}
+.A:hover .A *{
+	color:red;
+
+}
