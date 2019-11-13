@@ -1,0 +1,76 @@
+body{
+   color:black;
+   margin:10px;
+   width:100%;
+   height:900px;
+   display:inline-block;
+   font-family:'Gothic A1', sans-serif;
+}
+
+ul{
+	list-style: none;
+	font-family: 'Overpass', sans-serif;	
+	font-weight:400;
+	padding:10px;
+	font-size:23px;
+}
+
+#navbar{
+	display:inline;
+	width:100%;
+	height:80px;
+	border-bottom:solid black 1px;
+	position:fixed;
+	margin-left:0;
+	margin-right:0;
+	padding:5px;
+}
+
+#navbar h1{
+	font-family:'Gothic A1', sans-serif;
+}
+
+#navbar2{
+	display:inline;
+	width:30%;
+	height:80px;
+	position:fixed;
+	transform:translateX(950px);
+		vertical-align: 50px;
+}
+
+h1{
+	font-family:'Gothic A1', sans-serif;
+	font-size:75px;
+	margin-top:0;
+}
+
+
+#datecontainer{
+	width:150px;
+	display: inline-block;
+	height:820px;
+	border-right:solid black 1px;
+	transform: translate(20px,95px);
+	vertical-align: top;
+	overflow:hidden;
+}
+
+iframe{
+	position:fixed;
+	border-right:solid black 1px;
+	transform: translate(0,91px);
+	border:0;
+}
+
+#right{
+	margin:0;
+	width:740px;
+	height:860px;
+	float:right;
+	position:fixed;
+	border-left:solid black 1px;
+	overflow:hidden;
+	transform:translate(930px,-730px);
+
+}

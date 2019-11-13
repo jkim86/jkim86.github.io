@@ -8,7 +8,7 @@ function setup() {
   slider = createSlider(10,500,200);
   slider.position(500,30);
 
-  slider2 = createSlider(10,500,200);
+  slider2 = createSlider(10,500,500);
   slider2.position(500,70);
 
   slider3 = createSlider(10,50,20);
@@ -17,9 +17,9 @@ function setup() {
   input = createInput();
   input.position(500, 140);
 
-  button = createButton('submit');
+ /* button = createButton('submit');
   button. position(input.x + input.width, 140);
-  button.mousePressed(greet);
+  button.mousePressed(draw); */
 
 
   greeting = createElement('h2', 'TYPEANYTHING');
@@ -29,14 +29,20 @@ function setup() {
   textSize(50);
 }
 
-function greet() {
+/*function enter() {
+  if (event.which == 13 || event.keyCode == 13) {
+        function greet();
+        return false;
+    return true;
+}*/
+
+
+function draw() {
+  background(255);
 
   const name = input.value();
   greeting.html(name);
   input.value('');
-
-  mouseX = constrain(mouseX,10,width);
-  mouseY = constrain(mouseY,10,height);
 
   for (let y = 0; y < height; y+=slider2.value()) {
     push();
@@ -44,9 +50,10 @@ function greet() {
     translate(slider.value(), 0);
     textSize(slider3.value());
     textLeading(slider.value());
-    text(name, y, slider2.value());
+    text(input.value(), y, slider2.value());
     pop();
   }
+  ctx.clearRect(0, 0, width, height)
 };
 
 /* Timeline scrubbing — CLICK AND DRAG

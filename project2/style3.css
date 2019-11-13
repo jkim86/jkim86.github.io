@@ -1,0 +1,90 @@
+
+body{
+	width:800;
+	background-color:#ABFA7C;
+	color:black;
+	margin:30px;
+	margin-top:10px;
+	font-size:20px;
+	line-height: 27px;
+	font-family:'Gothic A1', sans-serif;
+}
+
+:lang("KO"){
+font-family:'Gothic A1', sans-serif;
+font-weight:400;
+}
+
+h1{
+	width:400px;
+	height:50px;
+	font-size:30px;
+	float:left;
+	font-weight:600;
+}
+
+:lang(EN){
+	font-family:'Gothic A1', sans-serif;
+	font-weight:400;
+	font-size:20px;
+
+}
+
+p{
+	font-family:'Gothic A1', sans-serif;
+	font-size: 15px;
+}
+
+li{
+	font-size: 15px;
+	line-height: 25px;
+	color:limegreen;
+	list-style: none;
+}
+.stats p{
+	font-size:15px;
+	line-height:20px;
+}
+.stats{
+width:200px;
+height:100%;
+margin-top:0;
+position:absolute;
+float:right;
+transform:translate(520px,95px);
+}
+.left{
+	width:80px;
+	display:inline-block;
+}
+.right{
+	width:100px;
+	display:inline-block;
+}
+
+.main{
+	overflow:auto;
+width:500px;
+}
+
+.image{
+	padding-top:20px;
+	width:730px;
+}
+
+figcaption{
+	font-family:'Gothic A1', sans-serif;
+	font-size:13px;
+}
+
+.image img{
+	margin:0;
+	display:inline-block;
+}
+
+button{
+	background-color:white;
+	border:none;
+	border-radius:25px;
+	font-size:15px;
+}
