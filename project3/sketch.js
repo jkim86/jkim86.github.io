@@ -17,9 +17,9 @@ function setup() {
   input = createInput();
   input.position(500, 140);
 
- /* button = createButton('submit');
+button = createButton('submit');
   button. position(input.x + input.width, 140);
-  button.mousePressed(draw); */
+  button.mousePressed(draw);
 
 
   greeting = createElement('h2', 'TYPEANYTHING');
@@ -50,7 +50,7 @@ function draw() {
     translate(slider.value(), 0);
     textSize(slider3.value());
     textLeading(slider.value());
-    text(input.value(), y, slider2.value());
+    text(name, y, slider2.value());
     pop();
   }
   ctx.clearRect(0, 0, width, height)
