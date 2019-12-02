@@ -1,0 +1,41 @@
+h1{
+	font-family: 'Roboto Mono', monospace;
+	font-style:normal;
+	font-weight:400;
+	font-size:20px;
+}
+input{
+ border: 0;
+ border-bottom: 2px solid #1976D2;
+ width: 30%;
+ font-family: 'Roboto Mono', monospace;
+	font-style:normal;
+	font-weight:400;
+	font-size: 30px;
+ line-height: 35px;
+ height: 70px;
+ text-align: center;
+ padding: 10px;
+ background: transparent;
+	color: #BBDEFB;
+}
+
+.button{
+border-radius:50%;
+background:#BBDEFB;
+border: 0;
+}
+.button:after{
+
+}
+.button:active:after{
+
+}
+
+
+#canvass{
+	left:0;
+	top:0;
+	position:absolute;
+	z-index:-10;
+}
