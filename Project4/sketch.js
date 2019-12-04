@@ -9,7 +9,7 @@ var input2;
 var canvas;
 
 function setup(){
-	canvas=createCanvas (windowWidth, windowHeight);
+	canvas=createCanvas (windowWidth, windowHeight+120);
 	canvas.parent(document.getElementById('canvass'));
 			var button_one = select('#go');
 			var button_two = select('#gotwo');
@@ -48,6 +48,7 @@ function gotData2(data2){
 function draw(){
 	background(255);
 	var off = radians(frameCount);
+	console.log();
 		if(weather){
 		let t = map(weather.main.temp, -30, 40, 0, 500);
 		let h = map(weather.main.humidity,0,100,0,20);
@@ -60,6 +61,7 @@ function draw(){
 		fill(10);
 		point(x,width/5+move,x+50,x+50)
 		strokeWeight(3)
+		translate()
 
 
 		 }}}
@@ -70,12 +72,13 @@ function draw(){
 		let h2 = map(weather2.main.humidity,0,100,0,20);
 
 
-	for (var x2 = h2 ; x2 < width/2; x2+=h2){
+	for (var x2 = h2 ; x2 < width; x2+=h2){
 	for (var y2 = h2; y2<=height; y2+=h2){
-	var movetwo = sin(x/height * radians(360) + off) * t2
+	var movetwo = sin(x2/height * radians(360) + off) * t2
 		fill(200);
-		point(width/2,width/5+move,x2,x2)
-		strokeWeight(10)
+		point(x2,width/5+movetwo,x2+50,x2+50)
+		strokeWeight(3)
+		translate()
 	}}}
 }
 

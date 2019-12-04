@@ -75,8 +75,10 @@ button:active {
 	position:absolute;
 	z-index:-10;
 	display:flex;
+	margin-top: 120px;
 }
 
+}
 .day { background:#d3dcf2;}
 .sunset { background:#e07510;}
 .night {background:#030c2b;}
