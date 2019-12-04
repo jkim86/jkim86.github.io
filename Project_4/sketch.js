@@ -70,11 +70,12 @@ function draw(){
 		let h2 = map(weather2.main.humidity,0,100,0,20);
 
 
-	for (var x2 = h2 ; x2 < width/2; x2+=h2){
+	for (var x2 = h2 ; x2 <= width/2; x2+=h2){
 	for (var y2 = h2; y2<=height; y2+=h2){
+
 	var movetwo = sin(x/height * radians(360) + off) * t2
 		fill(200);
-		point(x2,width/5+move,x2,x2)
+		point(x2,width/5+move,x2+50,x2+50)
 		strokeWeight(10)
 	}}}
 }
