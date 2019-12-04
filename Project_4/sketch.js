@@ -74,7 +74,7 @@ function draw(){
 	for (var y2 = h2; y2<=height; y2+=h2){
 	var movetwo = sin(x/height * radians(360) + off) * t2
 		fill(200);
-		point(width/2,width/5+move,x2,x2)
+		point(x2,width/5+move,x2,x2)
 		strokeWeight(10)
 	}}}
 }
