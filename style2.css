@@ -1,0 +1,49 @@
+
+body{
+	margin:10px;
+	font-family:'Heebo', sans-serif;
+	font-size:20px;
+	line-height:180%;
+	width:50%;
+	align-content: center;
+	margin-left:50px;
+}
+.title{
+	position:absolute;
+	z-index:-10;
+	transform: translate(0,760px);
+	font-size:40px;
+}
+
+.hover{
+	display:inline-flex;
+	width:30%;
+}
+
+ul{
+	list-style-type:none;
+}
+
+em{
+	font-style:italic;
+	text-indent:60%;
+	font-size:12px;
+}
+
+a{
+	color:black;
+	text-decoration: none;
+}
+
+a:hover {
+  color:black;
+  text-decoration: underline;
+
+}
+
+caption{
+	
+	font-family:'Heebo', sans-serif;
+	font-size:12px;
+	line-height:120%;
+}

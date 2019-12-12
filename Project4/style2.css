@@ -7,16 +7,7 @@ div.text{
 	border-bottom:1px solid black;
 	text-align:center;
 	margin-bottom:0;
-	height:60px;
-}
-
-div.inputtext{
-	background-color:white;
-	display:flex;
-	width:100%;
-	margin-top:0;
-	text-align:top;
-	margin-bottom:0;
+		height:60px;
 }
 
 h2{
@@ -27,26 +18,19 @@ h2{
 	line-height:18px;
 }
 
-#inputone{
-	width:50%;
-}
-#inputtwo{
-	width:50%;
-}
-input{
-border:0;
-border-bottom: 1px solid #1976D2;
-width:90%;
-height:30px;
-padding-top:5px;
-font-family: 'Roboto Mono', monospace;
+p{
+	font-family: 'Roboto Mono', monospace;
 	font-style:normal;
 	font-weight:400;
-	font-size: 18px;
- background: transparent;
-	color: #BBDEFB;
+	font-size:18px;
+	line-height:120%;
 }
-
+.intro{
+	text-align:center;
+	padding-left:500px;
+	padding-right:500px;
+	padding-top:200px;
+}
 
 button{
 border-radius:70%;
@@ -68,15 +52,3 @@ button:active {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
-
-#canvass{
-	left:0;
-	top:0;
-	position:absolute;
-	z-index:-10;
-	display:flex;
-}
-
-.day { background:#d3dcf2;}
-.sunset { background:#e07510;}
-.night {background:#030c2b;}

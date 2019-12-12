@@ -1,35 +1,72 @@
-body{position:center;}
+body{position:center;
+text-align:center;}
 			.container{
 				width:200px;
 				height:300px;
 				display:inline-flex;
-				margin:30px;}
+				margin:30px;
+				animation:
+				nudge 5s linear infinite alternate;}
 
+			@keyframes nudge {
+  0%, 100% {
+/*    transform: translate(100px, 0);*/
+    width:200px;
+    height:300px;
+  }
+  
+  50% {
+/*    transform: translate(150px, 0);*/
+    width:400px;
+    height:500px;
+  }
+  
+  80% {
+/*    transform: translate(0px, 0);*/
+    width:200px;
+    height:300px;
+  }
+}
+
+
+			@keyframes translatecontainer{
+      			  0%   {left: 0px; top: 0px;}
+  					25%  {left: 500px; top: 0px;}
+  					50%  {left: 500; top: 500;}
+  					75%  {left: 0px; top: 500px;}
+  					100% {left: 0px; top: 0px;}
+      		}
 
       		.container:hover {
       					animation:translatecontainer;
+      					animation-iteration-count:infinite;
+      					animation-play-state: running;
       		}
 
-      		@keyframes widthchange{
+      		@keyframes width{
       			0%{width:20px;}
-      			100%{width:40px;}
+      			50%{width:40px;}
+      			100%{width:20px;}
       		}
 
-      		.container:hover .rightstroke{
+      		.container .rightstroke:hover{
       					width:40px;
       					transition: width 2s;
       					animation-direction:alternate;
       					animation-iteration-count:infinite;
+      					animation-play-state: running; 
+
       					
       					}  
+      		.container .leftstroke:hover{
+      					width:40px;
+      					transition: width 2s;
+      					animation-direction:alternate;
+      					animation-iteration-count:infinite;
+      					  animation-play-state: running; 
 
-      		@keyframes translatecontainer{
-      			  0%   {left: 0px; top: 0px;}
-  25%  {left: 500px; top: 0px;}
-  50%  {left: 500; top: 500;}
-  75%  {left: 0px; top: 500px;}
-  100% {left: 0px; top: 0px;}
-      		}
+      					
+      					}  
 
 
       		.leftstroke{
@@ -41,7 +78,7 @@ body{position:center;}
 				background: #FF6B13;
 			}
 
-						.rightstroke{
+			.rightstroke{
 				height:100%;
 				width:2%;
 				background: #00000;
@@ -122,21 +159,31 @@ body{position:center;}
 
 			.egg {
       display: inline-flex;
-      width: 126px;
-      height: 180px;
+      width: 100%;
+      height: 100%;
       background-color: pink;
       border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
     }
+
+
     		.innercircle {
     			display:inline-flex;
     			width:50px;
-    			height:50px;
+    			height:100px;
+    			animation:jiggle 2s infinite;
     			background-color:white;
     			border-radius:50%;
     			z-index: 10;
-    			transform:translate(20px,20px);
+    			transform:translate(80px,20px);
+    			text-align:center;
+
     		}
-    		.egg:hover {
-    			reveal
-    		}
+
+
+    	@keyframes jiggle{
+      		 0% {
+        -webkit-transform: rotate(-1deg);}
+    		50% {
+        -webkit-transform: rotate(1deg);}
+      		}
   

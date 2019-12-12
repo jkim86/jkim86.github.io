@@ -2,11 +2,9 @@ let input, button, greeting;
 let slider;
 let slider2;
 let slider3;
-let w = window.innerWidth;
-let h = window.innerHeight;
 
 function setup() {
-  ctx=createCanvas(1800, 1080);
+  ctx=createCanvas(windowWidth,windowHeight);
   slider = createSlider(10,20,200);
   slider.position(770,700);
 
@@ -22,7 +20,7 @@ function setup() {
 
 
   greeting = createElement('h2');
-  greeting.position(window.innerWidth/2, 200);
+  greeting.position(770,200);
   textAlign(CENTER);
   textSize(40);
 }
